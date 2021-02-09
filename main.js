@@ -20,7 +20,7 @@ const User = mongoose.model('Users', UserSchema); // создание
 (async () => {
     
     app.get('/test', async (req, res) => { //Получить пользователя по id
-        res.status(200).send(user);
+        res.status(200).send({msg:"Hello"});
     });
 
 
